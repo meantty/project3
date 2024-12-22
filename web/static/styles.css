@@ -1,0 +1,140 @@
+/* Основные стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Стили для контейнера формы */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Стили для заголовков */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Стили для меток и полей ввода */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки отправки */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    color: #cc0000;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.error-message p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.error-message a {
+    color: #cc0000;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Общие стили для кнопок */
+button {
+    background-color: #007bff; /* Голубой фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Отображаем кнопки в строчку */
+    font-size: 1em; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 3px; /* Закруглённые углы */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+/* Эффект при наведении */
+button:hover {
+    background-color: #0056b3; /* Более тёмный зелёный при наведении */
+}
+
+/* Дополнительные стили для кнопки "Удалить" */
+button.delete {
+    background-color: #f44336; /* Красный фон */
+}
+
+button.delete:hover {
+    background-color: #e53935; /* Более тёмный красный при наведении */
+}
+
+/* Дополнительные стили для кнопки "Добавить промежуточную точку" */
+button.add {
+    background-color: #2196F3; /* Синий фон */
+}
+
+button.add:hover {
+    background-color: #1976D2; /* Более тёмный синий при наведении */
+}
+
+/* Дополнительные стили для кнопки "Показать карту городов" */
+button.show-map {
+    background-color: #ff9800; /* Оранжевый фон */
+}
+
+button.show-map:hover {
+    background-color: #fb8c00; /* Более тёмный оранжевый при наведении */
+}
+
+

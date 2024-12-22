@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта городов</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='map.js') }}"></script> <!-- Подключаем ваш JS файл -->
+</head>
+<body>
+    <h1>Карта городов</h1>
+    <div id="map" style="width: 100%; height: 600px;"></div> <!-- Контейнер для карты -->
+
+    <script type="application/json" id="cities-data">{{ cities|tojson }}</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Погодный сервис</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='form.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Введите маршрут</h1>
+        <form action="/" method="POST">
+
+            <!-- Поле для ввода количества дней -->
+            <h2>Количество дней для прогноза</h2>
+            <label for="forecast_days">Введите количество дней на которое требуется спрогнозировать погоду:</label>
+            <input type="number" name="forecast_days" id="forecast_days" min="1" max="14" value="7"><br>
+
+            <!-- Начальная точка -->
+            <h2>Начальная точка</h2>
+            <label for="start_city">Город:</label>
+            <input type="text" name="start_city" id="start_city" required>
+
+            <!-- Промежуточные точки -->
+            <div id="intermediate-points-container"></div>
+            <button type="button" onclick="addIntermediatePoint()">Добавить промежуточную точку</button>
+            <input type="hidden" name="num_intermediate_points" id="num_intermediate_points" value="0">
+
+            <!-- Конечная точка -->
+            <h2>Конечная точка</h2>
+            <label for="end_city">Город:</label>
+            <input type="text" name="end_city" id="end_city" required>
+
+            <input type="submit" value="Проверить погоду">
+        </form>
+    </div>
+</body>
+</html>

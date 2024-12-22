@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Результаты прогноза погоды</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Прогноз погоды по маршруту</h1>
+        <button onclick="window.open('{{ url_for('show_map', cities=weather_data | tojson) }}', '_blank')">
+            Показать карту городов
+        </button>
+
+        <iframe src="{{ url_for('/dashboard/') }}" width="100%" height="800"></iframe>
+    </div>
+</body>
+</html>
